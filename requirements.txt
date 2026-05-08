@@ -1,0 +1,19 @@
+# Core dependencies
+fastapi
+uvicorn
+
+# AI & Graph
+langgraph
+openai
+
+# Browser & Web Scraping
+playwright
+beautifulsoup4
+lxml
+
+# Database
+qdrant-client
+psycopg2-binary
+
+# Image processing
+pillow

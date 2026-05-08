@@ -1,12 +1,23 @@
 import warnings
-warnings.filterwarnings("ignore", category=DeprecationWarning)
-warnings.filterwarnings("ignore", message=".*pydantic.v1.*")
-warnings.filterwarnings("ignore", category=PendingDeprecationWarning)
-
-from langgraph.graph import StateGraph, MessagesState, START, END
-from pprint import pprint
 import json
 
+# Suppress noisy LangChain/LangGraph warnings
+warnings.filterwarnings(
+    "ignore",
+    module="langchain_core"
+)
+
+warnings.filterwarnings(
+    "ignore",
+    module="langgraph"
+)
+
+from langgraph.graph import StateGraph, MessagesState, START, END
+
+
+# -----------------------------
+# Mock LLM Node
+# -----------------------------
 def mock_llm(state: MessagesState):
     return {
         "messages": [
@@ -17,41 +28,93 @@ def mock_llm(state: MessagesState):
         ]
     }
 
+
+# -----------------------------
+# Helper Functions
+# -----------------------------
+def serialize_messages(messages):
+    """
+    Convert LangChain message objects
+    into clean JSON serializable dicts.
+    """
+
+    serialized = []
+
+    for msg in messages:
+        serialized.append({
+            "role": msg.type,
+            "content": msg.content,
+            "agent": getattr(msg, "name", None)
+        })
+
+    return serialized
+
+
+def display_conversation(messages):
+    """
+    Pretty terminal renderer.
+    """
+
+    print("\n" + "=" * 60)
+    print("CONVERSATION")
+    print("=" * 60)
+
+    for idx, msg in enumerate(messages, 1):
+
+        print(f"\n[{idx}] {msg.type.upper()}")
+
+        if hasattr(msg, "name") and msg.name:
+            print(f"Agent: {msg.name}")
+
+        print(f"Content: {msg.content}")
+
+    print("\n" + "=" * 60)
+
+
+# -----------------------------
+# Build Graph
+# -----------------------------
 graph = StateGraph(MessagesState)
 
 graph.add_node("mock_llm", mock_llm)
+
 graph.add_edge(START, "mock_llm")
 graph.add_edge("mock_llm", END)
 
 app = graph.compile()
 
+
+# -----------------------------
+# Invoke Graph
+# -----------------------------
+user_input = input("\n💬 Enter your message: ")
+
 result = app.invoke({
     "messages": [
         {
             "role": "user",
-            "content": "hi!"
+            "content": user_input
         }
     ]
 })
 
-print("\n" + "="*60)
-print("FINAL STATE")
-print("="*60)
 
-# Extract messages
-messages = result['messages']
-user_msg = messages[0]
-ai_msg = messages[-1]
+# -----------------------------
+# Pretty Terminal Output
+# -----------------------------
+display_conversation(result["messages"])
 
-print(f"\nInput Message: {user_msg.content}")
-print(f"Output Message: {ai_msg.content}")
-print(f"Message Type: {type(ai_msg).__name__}")
-print("\n" + "="*60)
-print("Full Response:")
-print("="*60)
-print(json.dumps({
-    "messages": [
-        {"role": m.type, "content": m.content}
-        for m in messages
-    ]
-}, indent=2))
+
+# -----------------------------
+# Clean JSON Output
+# -----------------------------
+display_output = {
+    "messages": serialize_messages(result["messages"])
+}
+
+print("\nJSON OUTPUT")
+print("=" * 60)
+
+print(json.dumps(display_output, indent=2))
+
+print("=" * 60)
