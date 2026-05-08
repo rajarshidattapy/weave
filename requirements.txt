@@ -1,19 +1,15 @@
 # Core dependencies
-fastapi
-uvicorn
+langgraph>=0.0.30
+langchain-core>=1.3.0
 
-# AI & Graph
-langgraph
-openai
+# Web & Browser
+playwright>=1.40.0
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
 
-# Browser & Web Scraping
-playwright
-beautifulsoup4
-lxml
+# AI
+openai>=1.0.0
 
-# Database
-qdrant-client
-psycopg2-binary
-
-# Image processing
-pillow
+# Utilities
+python-dotenv>=1.0.0
+pydantic>=2.0.0
