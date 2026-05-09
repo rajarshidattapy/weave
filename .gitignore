@@ -24,9 +24,8 @@ wheels/
 *.egg
 
 # Environment
-.env
-.env.local
-.env.*.local
+backend/.env
+ui/.env.local
 
 # IDE
 .vscode/
