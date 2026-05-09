@@ -3,6 +3,7 @@
 import { TopNav } from '@/components/top-nav';
 import { LeftPanel } from '@/components/left-panel';
 import { RightPanel } from '@/components/right-panel';
+import { ResizableLayout } from '@/components/resizable-layout';
 import { CommandPalette } from '@/components/command-palette';
 import { FloatingActions } from '@/components/floating-actions';
 import { WebContainerProvider } from '@/providers/webcontainer-provider';
@@ -14,10 +15,10 @@ export default function Home() {
       <AppProvider>
         <main className="flex h-screen flex-col overflow-hidden bg-black">
           <TopNav />
-          <div className="flex flex-1 overflow-hidden">
-            <LeftPanel />
-            <RightPanel />
-          </div>
+          <ResizableLayout 
+            left={<LeftPanel />} 
+            right={<RightPanel />} 
+          />
           <CommandPalette />
           <FloatingActions />
         </main>

@@ -12,7 +12,7 @@ export function LeftPanel() {
       initial={{ opacity: 0, x: -20 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.4, delay: 0.1 }}
-      className="w-full md:w-[420px] flex-shrink-0 border-r border-white/5 bg-black/40 overflow-y-auto max-h-[calc(100vh-64px)]"
+      className="w-full h-full bg-black/40 overflow-y-auto max-h-[calc(100vh-64px)]"
     >
       <div className="space-y-8 p-6">
         {/* Prompt Composer */}
