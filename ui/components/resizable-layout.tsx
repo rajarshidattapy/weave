@@ -80,47 +80,20 @@ export function ResizableLayout({ left, right }: ResizableLayoutProps) {
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        {/* Glow and Blur Background */}
+        {/* Minimal sleek line */}
         <motion.div
           animate={{
-            opacity: isDragging || isHovered ? 1 : 0,
-            width: isDragging || isHovered ? 24 : 0,
+            backgroundColor: isDragging ? 'rgba(255, 255, 255, 0.4)' : isHovered ? 'rgba(255, 255, 255, 0.2)' : 'rgba(255, 255, 255, 0.05)',
+            width: isDragging || isHovered ? 2 : 1,
           }}
-          transition={{ duration: 0.2 }}
-          className="absolute h-full bg-blue-500/10 blur-md pointer-events-none"
+          transition={{ duration: 0.15 }}
+          className="h-full"
         />
-
-        {/* Thin center glowing line */}
-        <motion.div
-          animate={{
-            opacity: isDragging || isHovered ? 1 : 0.3,
-            scaleX: isDragging ? 1.5 : 1,
-            backgroundColor: isDragging ? '#3b82f6' : isHovered ? '#60a5fa' : '#ffffff',
-          }}
-          transition={{ duration: 0.2 }}
-          className="h-full w-[1px] bg-white/30 transition-shadow duration-200"
-          style={{ boxShadow: isDragging || isHovered ? '0 0 10px rgba(59, 130, 246, 0.8)' : 'none' }}
-        />
-
-        {/* Floating Handle */}
-        <motion.div
-          animate={{
-            scale: isDragging ? 1.1 : isHovered ? 1 : 0.8,
-            opacity: isDragging || isHovered ? 1 : 0,
-          }}
-          transition={{ duration: 0.2, type: 'spring', stiffness: 400, damping: 25 }}
-          className="absolute flex h-10 w-4 items-center justify-center rounded-full border border-white/20 bg-black/80 backdrop-blur-md shadow-[0_0_15px_rgba(59,130,246,0.6)]"
-        >
-          <div className="flex -space-x-[2px]">
-            <ChevronLeft className="h-3 w-3 text-white/70" />
-            <ChevronRight className="h-3 w-3 text-white/70" />
-          </div>
-        </motion.div>
       </div>
 
       {/* Right Panel Wrapper */}
       <motion.div 
-        className="flex-1 h-full overflow-hidden relative"
+        className="flex-1 flex flex-col h-full overflow-hidden relative"
         animate={{
           scale: isDragging ? 0.99 : 1,
           opacity: isDragging ? 0.8 : 1,

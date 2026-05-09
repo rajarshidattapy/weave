@@ -24,7 +24,7 @@ export function WebContainerProvider({ children }: { children: React.ReactNode }
       // Disabled WebContainer boot since we are running the local iframe directly.
       // WebContainers require strict Cross-Origin Isolation headers which block local cross-port iframes.
       setIsInitializing(false);
-      setIsReady(false);
+      setIsReady(true);
     };
 
     initializeWebContainer();

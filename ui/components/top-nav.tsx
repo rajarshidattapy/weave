@@ -34,10 +34,10 @@ export function TopNav() {
           <Circle className={`h-2 w-2 ${statusColor}`} />
           <span className="text-xs font-medium text-white/70">{statusText}</span>
         </div>
-        <button className="flex items-center gap-2 rounded-lg bg-white/10 px-3 py-2 text-sm font-medium text-white/70 transition-all duration-200 hover:bg-white/20 hover:text-white">
+        {/* <button className="flex items-center gap-2 rounded-lg bg-white/10 px-3 py-2 text-sm font-medium text-white/70 transition-all duration-200 hover:bg-white/20 hover:text-white">
           <Download className="h-4 w-4" />
-          <span className="hidden sm:inline">Deploy</span>
-        </button>
+          <span className="hidden sm:inline"></span>
+        </button> */}
         <div className="h-8 w-8 rounded-full bg-gradient-to-br from-blue-500 to-purple-600" />
       </div>
     </motion.div>
