@@ -6,10 +6,20 @@ import { Upload, Github, Folder, ChevronRight, Layers, Box, Terminal, Loader2, C
 import { useRouter } from 'next/navigation';
 import Script from 'next/script';
 import { useAuth, UserButton, SignInButton } from '@clerk/nextjs';
+import { indexLibrary } from '@/lib/api';
+
+// Maps library IDs to their docs base URLs for indexing
+const LIBRARY_URLS: Record<string, { url: string; name: string }> = {
+  'shadcn/ui': { url: 'https://ui.shadcn.com/docs/components', name: 'shadcn/ui' },
+  aceternity: { url: 'https://ui.aceternity.com/components', name: 'Aceternity UI' },
+  magic: { url: 'https://magicui.design/docs/components', name: 'Magic UI' },
+  watermelon: { url: 'https://ui.watermelon.sh/components', name: 'Watermelon UI' },
+};
 
 export default function OnboardingFlow() {
   const { isSignedIn } = useAuth();
   const [step, setStep] = useState(1);
+  const [selectedLibraries, setSelectedLibraries] = useState<string[]>(['shadcn/ui']);
   const router = useRouter();
 
   const nextStep = () => {
@@ -111,8 +121,21 @@ export default function OnboardingFlow() {
             <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5 pointer-events-none" />
             <AnimatePresence mode="wait">
               {step === 1 && <StepOne key="step1" onNext={nextStep} />}
-              {step === 2 && <StepTwo key="step2" onNext={nextStep} />}
-              {step === 3 && <StepThree key="step3" onComplete={handleComplete} />}
+              {step === 2 && (
+                <StepTwo
+                  key="step2"
+                  selected={selectedLibraries}
+                  setSelected={setSelectedLibraries}
+                  onNext={nextStep}
+                />
+              )}
+              {step === 3 && (
+                <StepThree
+                  key="step3"
+                  libraries={selectedLibraries}
+                  onComplete={handleComplete}
+                />
+              )}
             </AnimatePresence>
           </div>
         </motion.div>
@@ -173,8 +196,15 @@ function StepOne({ onNext }: { onNext: () => void }) {
   );
 }
 
-function StepTwo({ onNext }: { onNext: () => void }) {
-  const [selected, setSelected] = useState<string[]>(['shadcn/ui']);
+function StepTwo({
+  onNext,
+  selected,
+  setSelected,
+}: {
+  onNext: () => void;
+  selected: string[];
+  setSelected: (libs: string[]) => void;
+}) {
   const [searchQuery, setSearchQuery] = useState('');
   const [customLibraries, setCustomLibraries] = useState<{ id: string, name: string, tags: string[] }[]>([]);
 
@@ -214,13 +244,13 @@ function StepTwo({ onNext }: { onNext: () => void }) {
       newName = mainPart.charAt(0).toUpperCase() + mainPart.slice(1);
     } catch (e) { }
 
-    setCustomLibraries(prev => [...prev, { id: newId, name: newName, tags: ['Custom URL'] }]);
-    setSelected(prev => [...prev, newId]);
+    setCustomLibraries((prev) => [...prev, { id: newId, name: newName, tags: ['Custom URL'] }]);
+    setSelected([...selected, newId]);
     setSearchQuery('');
   };
 
   const toggle = (id: string) => {
-    setSelected(prev => prev.includes(id) ? prev.filter(x => x !== id) : [...prev, id]);
+    setSelected(selected.includes(id) ? selected.filter(x => x !== id) : [...selected, id]);
   };
 
   return (
@@ -322,34 +352,68 @@ function StepTwo({ onNext }: { onNext: () => void }) {
   );
 }
 
-function StepThree({ onComplete }: { onComplete: () => void }) {
+function StepThree({
+  libraries,
+  onComplete,
+}: {
+  libraries: string[];
+  onComplete: () => void;
+}) {
   const [logs, setLogs] = useState<string[]>([]);
 
+  const pushLog = (msg: string) => setLogs((prev) => [...prev, msg]);
+
   useEffect(() => {
-    const sequence = [
-      'Initializing AI workspace...',
-      'Analyzing repository structure...',
-      'Detected Next.js App Router',
-      'Indexing 42 UI components...',
-      'Generating semantic design graph...',
-      'Booting WebContainer sandbox...',
-      'Installing dependencies...',
-      'Environment ready.'
-    ];
+    let cancelled = false;
 
-    let current = 0;
-    const interval = setInterval(() => {
-      if (current < sequence.length) {
-        setLogs(prev => [...prev, sequence[current]]);
-        current++;
-      } else {
-        clearInterval(interval);
-        setTimeout(onComplete, 1500); // Transition out
+    const run = async () => {
+      pushLog('Initializing AI workspace...');
+      pushLog('Detected Next.js App Router');
+
+      // Kick off indexing for each selected library, fire & forget
+      const targets = libraries.map((id) => {
+        const known = LIBRARY_URLS[id];
+        if (known) return known;
+        // Custom URL
+        if (id.startsWith('http')) {
+          let name = id;
+          try {
+            const parts = new URL(id).hostname.replace(/^www\./, '').split('.');
+            name = parts[parts.length - 2];
+            name = name.charAt(0).toUpperCase() + name.slice(1);
+          } catch {}
+          return { url: id, name };
+        }
+        return null;
+      }).filter(Boolean) as { url: string; name: string }[];
+
+      for (const lib of targets) {
+        if (cancelled) return;
+        pushLog(`Indexing ${lib.name}...`);
+        // Fire indexing without waiting — it runs in the backend
+        indexLibrary(lib.url, lib.name).then((res) => {
+          if (!cancelled) {
+            pushLog(
+              `✓ ${lib.name}: ${res.indexed_components} components indexed`
+            );
+          }
+        }).catch(() => {
+          if (!cancelled) pushLog(`⚠ ${lib.name}: backend offline, skipping`);
+        });
       }
-    }, 600);
 
-    return () => clearInterval(interval);
-  }, [onComplete]);
+      pushLog('Generating semantic design graph...');
+      await new Promise((r) => setTimeout(r, 800));
+      pushLog('Booting WebContainer sandbox...');
+      await new Promise((r) => setTimeout(r, 600));
+      pushLog('Environment ready.');
+      await new Promise((r) => setTimeout(r, 1200));
+      if (!cancelled) onComplete();
+    };
+
+    run();
+    return () => { cancelled = true; };
+  }, [libraries, onComplete]);
 
   return (
     <motion.div

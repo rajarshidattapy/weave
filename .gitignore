@@ -26,6 +26,7 @@ wheels/
 # Environment
 backend/.env
 ui/.env.local
+.claude/
 
 # IDE
 .vscode/
@@ -39,6 +40,7 @@ ui/.env.local
 node_modules/
 npm-debug.log
 yarn-error.log
+backend/storage/
 
 # Project specific
 data/screenshots/

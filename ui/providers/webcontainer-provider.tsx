@@ -31,7 +31,7 @@ export function WebContainerProvider({ children }: { children: React.ReactNode }
 
     return () => {
       if (instance) {
-        instance.teardown();
+        (instance as WebContainer).teardown();
       }
     };
   }, []);

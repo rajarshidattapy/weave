@@ -1,4 +1,5 @@
 import {
+import Button from "./components/Button";
   FeatureGrid,
   HeroSection,
   MetricsStrip,
@@ -21,6 +22,7 @@ export default function Home() {
         />
         <MetricsStrip />
         <FeatureGrid />
+              <Button />
       </main>
     </div>
   );

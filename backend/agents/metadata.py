@@ -54,7 +54,7 @@ def generate_metadata(name: str, tsx_code: str = "", description: str = "") -> d
                     "content": (
                         f"Component: {name}\n\n"
                         f"Description: {description or 'N/A'}\n\n"
-                        f"Code:\n```tsx\n{tsx_code[:3000]}\n```"
+                        f"Code:\n```tsx\n{(tsx_code or '')[:3000]}\n```"
                     ),
                 },
             ],
@@ -65,10 +65,10 @@ def generate_metadata(name: str, tsx_code: str = "", description: str = "") -> d
         content = response.choices[0].message.content
         parsed = json.loads(content)
 
-        semantic = parsed.get("semantic", [])
-        visual = parsed.get("visual", [])
-        usage = parsed.get("usage", [])
-        technical = parsed.get("technical", [])
+        semantic = parsed.get("semantic") or []
+        visual = parsed.get("visual") or []
+        usage = parsed.get("usage") or []
+        technical = parsed.get("technical") or []
 
         return {
             "tags": semantic + usage + technical,

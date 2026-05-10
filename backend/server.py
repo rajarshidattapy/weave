@@ -27,7 +27,7 @@ from schemas.models import (
     RetrieveRequest, RetrieveResponse,
     InjectRequest, InjectResponse,
     IndexLibraryRequest, IndexLibraryResponse,
-    ComponentResponse,
+    ComponentResponse, GraphResponse,
 )
 from agents.retrieval import retrieve_components
 from agents.injection import inject_component
@@ -35,6 +35,7 @@ from agents.discovery import discover_components
 from agents.extraction import extract_component
 from agents.metadata import generate_metadata
 from agents.compatibility import compute_compatibility
+from agents.graph import generate_graph
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -92,7 +93,7 @@ async def root():
 @app.post("/retrieve", response_model=RetrieveResponse)
 async def api_retrieve(req: RetrieveRequest):
     """Semantic component retrieval."""
-    result = await asyncio.to_thread(retrieve_components, req.prompt)
+    result = await asyncio.to_thread(retrieve_components, req.prompt, context=req.context)
     components = [ComponentResponse(**c) for c in result["components"]]
     return RetrieveResponse(
         prompt=req.prompt,
@@ -179,6 +180,13 @@ async def api_list_components(limit: int = 100, offset: int = 0):
     """List all indexed components."""
     components = get_all_components(limit=limit, offset=offset)
     return {"components": components, "count": len(components)}
+
+
+@app.get("/graph")
+async def api_graph(library: str = None):
+    """Generate and return the component relationship graph."""
+    graph = await asyncio.to_thread(generate_graph, library)
+    return graph
 
 
 @app.get("/components/{component_id}")

@@ -1,0 +1,333 @@
+13:14:32  Extracting component from https://ui.shadcn.com/docs/components/accordion
+13:15:05  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:15:05  Generating metadata for: Accordion
+13:15:06  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:15:06  Extracting component from https://ui.shadcn.com/docs/components/alert
+13:15:42  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:15:42  Generating metadata for: Alert
+13:15:43  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:15:44  Extracting component from https://ui.shadcn.com/docs/components/alert-dialog
+13:16:17  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:16:17  Generating metadata for: Alert Dialog
+13:16:19  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:16:19  Extracting component from https://ui.shadcn.com/docs/components/avatar
+13:16:52  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:16:52  Generating metadata for: Avatar
+13:16:54  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:16:54  Extracting component from https://ui.shadcn.com/docs/components/badge
+13:17:25  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:17:25  Generating metadata for: Badge
+13:17:26  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:17:26  Extracting component from https://ui.shadcn.com/docs/components/button
+13:17:55  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:17:55  Generating metadata for: Button
+13:17:56  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:17:56  Extracting component from https://ui.shadcn.com/docs/components/calendar
+13:18:22  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:18:22  Generating metadata for: Calendar
+13:18:24  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:18:24  Extracting component from https://ui.shadcn.com/docs/components/card
+13:18:54  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:18:54  Generating metadata for: Card
+13:18:55  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:18:55  Extracting component from https://ui.shadcn.com/docs/components/carousel
+13:19:26  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:19:26  Generating metadata for: Carousel
+13:19:27  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:19:27  Extracting component from https://ui.shadcn.com/docs/components/checkbox
+13:19:47  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:19:47  Generating metadata for: Checkbox
+13:19:50  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:19:50  Extracting component from https://ui.shadcn.com/docs/components/collapsible
+13:20:18  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:20:18  Generating metadata for: Collapsible
+13:20:19  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:20:19  Extracting component from https://ui.shadcn.com/docs/components/command
+13:20:42  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:20:42  Generating metadata for: Command
+13:20:44  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:20:44  Extracting component from https://ui.shadcn.com/docs/components/combobox
+13:21:25  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:21:25  Generating metadata for: Combobox
+13:21:26  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:21:26  Extracting component from https://ui.shadcn.com/docs/components/context-menu
+13:22:14  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:22:14  Generating metadata for: Context Menu
+13:22:16  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:22:16  Extracting component from https://ui.shadcn.com/docs/components/data-table
+13:22:54  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:22:54  Generating metadata for: Data Table
+13:22:56  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:22:56  Extracting component from https://ui.shadcn.com/docs/components/date-picker
+13:23:26  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:23:26  Generating metadata for: Date Picker
+13:23:27  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:23:27  Extracting component from https://ui.shadcn.com/docs/components/dialog
+13:23:56  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:23:56  Generating metadata for: Dialog
+13:23:58  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:23:58  Extracting component from https://ui.shadcn.com/docs/components/drawer
+13:24:15  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:24:15  Generating metadata for: Drawer
+13:24:16  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:24:16  Extracting component from https://ui.shadcn.com/docs/components/dropdown-menu
+13:24:54  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:24:54  Generating metadata for: Dropdown Menu
+13:24:55  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:24:55  Extracting component from https://ui.shadcn.com/docs/components/form
+13:25:11  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:25:11  Generating metadata for: Forms
+13:25:11  Metadata generation failed for Forms: 'NoneType' object is not subscriptable
+13:25:11  Extracting component from https://ui.shadcn.com/docs/components/hover-card
+13:26:12  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:26:12  Generating metadata for: Hover Card
+13:26:13  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:26:13  Extracting component from https://ui.shadcn.com/docs/components/input
+13:27:20  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:27:20  Generating metadata for: Input
+13:27:21  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:27:21  Extracting component from https://ui.shadcn.com/docs/components/input-otp
+13:27:55  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:27:55  Generating metadata for: Input OTP
+13:27:56  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:27:56  Extracting component from https://ui.shadcn.com/docs/components/label
+13:28:10  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:28:10  Generating metadata for: Label
+13:28:11  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:28:11  Extracting component from https://ui.shadcn.com/docs/components/menubar
+13:28:33  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:28:33  Generating metadata for: Menubar
+13:28:35  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:28:35  Extracting component from https://ui.shadcn.com/docs/components/navigation-menu
+13:28:59  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:28:59  Generating metadata for: Navigation Menu
+13:29:00  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:29:00  Extracting component from https://ui.shadcn.com/docs/components/pagination
+13:29:24  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:29:24  Generating metadata for: Pagination
+13:29:25  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:29:25  Extracting component from https://ui.shadcn.com/docs/components/popover
+13:29:53  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:29:53  Generating metadata for: Popover
+13:29:54  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:29:54  Extracting component from https://ui.shadcn.com/docs/components/progress
+13:30:08  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:30:08  Generating metadata for: Progress
+13:30:09  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:30:09  Extracting component from https://ui.shadcn.com/docs/components/radio-group
+13:30:41  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:30:41  Generating metadata for: Radio Group
+13:30:43  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:30:43  Extracting component from https://ui.shadcn.com/docs/components/resizable
+13:30:59  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:30:59  Generating metadata for: Resizable
+13:31:00  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:31:00  Extracting component from https://ui.shadcn.com/docs/components/scroll-area
+13:31:16  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:31:16  Generating metadata for: Scroll Area
+13:31:18  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:31:18  Extracting component from https://ui.shadcn.com/docs/components/select
+13:31:50  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:31:50  Generating metadata for: Select
+13:31:51  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:31:51  Extracting component from https://ui.shadcn.com/docs/components/separator
+13:32:16  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:32:16  Generating metadata for: Separator
+13:32:18  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:32:18  Extracting component from https://ui.shadcn.com/docs/components/sheet
+13:32:50  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:32:50  Generating metadata for: Sheet
+13:32:51  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:32:51  Extracting component from https://ui.shadcn.com/docs/components/sidebar
+13:33:33  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:33:33  Generating metadata for: Sidebar
+13:33:35  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:33:35  Extracting component from https://ui.shadcn.com/docs/components/skeleton
+13:33:51  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:33:51  Generating metadata for: Skeleton
+13:33:52  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:33:52  Extracting component from https://ui.shadcn.com/docs/components/slider
+13:34:20  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:34:20  Generating metadata for: Slider
+13:34:23  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:34:23  Extracting component from https://ui.shadcn.com/docs/components/sonner
+13:34:46  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:34:46  Generating metadata for: Sonner
+13:34:47  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:34:47  Extracting component from https://ui.shadcn.com/docs/components/switch
+13:35:19  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:35:19  Generating metadata for: Switch
+13:35:20  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:35:20  Extracting component from https://ui.shadcn.com/docs/components/table
+13:35:43  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:35:43  Generating metadata for: Table
+13:35:44  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:35:44  Extracting component from https://ui.shadcn.com/docs/components/tabs
+13:36:12  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:36:12  Generating metadata for: Tabs
+13:36:13  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:36:13  Extracting component from https://ui.shadcn.com/docs/components/textarea
+13:36:35  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:36:35  Generating metadata for: Textarea
+13:36:36  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:36:36  Extracting component from https://ui.shadcn.com/docs/components/toast
+13:36:46  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:36:46  Generating metadata for: Toast
+13:36:46  Metadata generation failed for Toast: 'NoneType' object is not subscriptable
+13:36:46  Extracting component from https://ui.shadcn.com/docs/components/toggle
+13:37:11  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:37:11  Generating metadata for: Toggle
+13:37:12  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:37:12  Extracting component from https://ui.shadcn.com/docs/components/tooltip
+13:37:33  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:37:33  Generating metadata for: Tooltip
+13:37:34  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:37:34  Extracting component from https://www.radix-ui.com/primitives/docs/components/accordion
+13:37:54  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:37:54  Generating metadata for: Accordion
+13:37:54  Metadata generation failed for Accordion: 'NoneType' object is not subscriptable
+13:37:54  Extracting component from https://www.radix-ui.com/primitives/docs/components/alert-dialog
+13:38:13  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:38:13  Generating metadata for: Alert Dialog
+13:38:13  Metadata generation failed for Alert Dialog: 'NoneType' object is not subscriptable
+13:38:13  Extracting component from https://www.radix-ui.com/primitives/docs/components/aspect-ratio
+13:38:27  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:38:27  Generating metadata for: Aspect Ratio
+13:38:27  Metadata generation failed for Aspect Ratio: 'NoneType' object is not subscriptable
+13:38:28  Extracting component from https://www.radix-ui.com/primitives/docs/components/avatar
+13:38:43  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:38:43  Generating metadata for: Avatar
+13:38:43  Metadata generation failed for Avatar: 'NoneType' object is not subscriptable
+13:38:43  Extracting component from https://www.radix-ui.com/primitives/docs/components/checkbox
+13:39:06  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:39:06  Generating metadata for: Checkbox
+13:39:06  Metadata generation failed for Checkbox: 'NoneType' object is not subscriptable
+13:39:06  Extracting component from https://www.radix-ui.com/primitives/docs/components/collapsible
+13:39:25  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:39:25  Generating metadata for: Collapsible
+13:39:25  Metadata generation failed for Collapsible: 'NoneType' object is not subscriptable
+13:39:25  Extracting component from https://www.radix-ui.com/primitives/docs/components/context-menu
+13:39:53  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:39:53  Generating metadata for: Context Menu
+13:39:53  Metadata generation failed for Context Menu: 'NoneType' object is not subscriptable
+13:39:53  Extracting component from https://www.radix-ui.com/primitives/docs/components/dialog
+13:40:16  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:40:16  Generating metadata for: Dialog
+13:40:17  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:40:17  Extracting component from https://www.radix-ui.com/primitives/docs/components/dropdown-menu
+13:42:22  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:42:22  Generating metadata for: Dropdown Menu
+13:42:22  Metadata generation failed for Dropdown Menu: 'NoneType' object is not subscriptable
+13:42:23  Extracting component from https://www.radix-ui.com/primitives/docs/components/form
+13:42:44  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:42:44  Generating metadata for: Form
+13:42:44  Metadata generation failed for Form: 'NoneType' object is not subscriptable
+13:42:44  Extracting component from https://www.radix-ui.com/primitives/docs/components/hover-card
+13:43:14  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:43:14  Generating metadata for: Hover Card
+13:43:14  Metadata generation failed for Hover Card: 'NoneType' object is not subscriptable
+13:43:14  Extracting component from https://www.radix-ui.com/primitives/docs/components/label
+13:43:28  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:43:28  Generating metadata for: Label
+13:43:28  Metadata generation failed for Label: 'NoneType' object is not subscriptable
+13:43:28  Extracting component from https://www.radix-ui.com/primitives/docs/components/menubar
+13:43:48  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:43:48  Generating metadata for: Menubar
+13:43:48  Metadata generation failed for Menubar: 'NoneType' object is not subscriptable
+13:43:48  Extracting component from https://www.radix-ui.com/primitives/docs/components/navigation-menu
+13:44:10  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:44:10  Generating metadata for: Navigation Menu
+13:44:11  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:44:11  Extracting component from https://www.radix-ui.com/primitives/docs/components/popover
+13:45:26  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:45:26  Generating metadata for: Popover
+13:45:26  Metadata generation failed for Popover: 'NoneType' object is not subscriptable
+13:45:26  Extracting component from https://www.radix-ui.com/primitives/docs/components/progress
+13:47:13  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:47:13  Generating metadata for: Progress
+13:47:13  Metadata generation failed for Progress: 'NoneType' object is not subscriptable
+13:47:13  Extracting component from https://www.radix-ui.com/primitives/docs/components/radio-group
+13:47:30  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:47:30  Generating metadata for: Radio Group
+13:47:30  Metadata generation failed for Radio Group: 'NoneType' object is not subscriptable
+13:47:30  Extracting component from https://www.radix-ui.com/primitives/docs/components/scroll-area
+13:47:57  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:47:57  Generating metadata for: Scroll Area
+13:47:57  Metadata generation failed for Scroll Area: 'NoneType' object is not subscriptable
+13:47:57  Extracting component from https://www.radix-ui.com/primitives/docs/components/select
+13:48:35  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:48:35  Generating metadata for: Select
+13:48:35  Metadata generation failed for Select: 'NoneType' object is not subscriptable
+13:48:35  Extracting component from https://www.radix-ui.com/primitives/docs/components/separator
+13:50:29  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:50:29  Generating metadata for: Separator
+13:50:29  Metadata generation failed for Separator: 'NoneType' object is not subscriptable
+13:50:29  Extracting component from https://www.radix-ui.com/primitives/docs/components/slider
+13:51:27  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:51:27  Generating metadata for: Slider
+13:51:28  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:51:28  Extracting component from https://www.radix-ui.com/primitives/docs/components/switch
+13:54:35  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:54:35  Generating metadata for: Switch
+13:54:36  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:54:36  Extracting component from https://www.radix-ui.com/primitives/docs/components/tabs
+13:55:16  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:55:16  Generating metadata for: Tabs
+13:55:16  Metadata generation failed for Tabs: 'NoneType' object is not subscriptable
+13:55:16  Extracting component from https://www.radix-ui.com/primitives/docs/components/toast
+13:56:06  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:56:06  Generating metadata for: Toast
+13:56:06  Metadata generation failed for Toast: 'NoneType' object is not subscriptable
+13:56:06  Extracting component from https://www.radix-ui.com/primitives/docs/components/toggle
+13:58:01  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:58:01  Generating metadata for: Toggle
+13:58:01  Metadata generation failed for Toggle: 'NoneType' object is not subscriptable
+13:58:01  Extracting component from https://www.radix-ui.com/primitives/docs/components/toggle-group
+13:59:09  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:59:09  Generating metadata for: Toggle Group
+13:59:09  Metadata generation failed for Toggle Group: 'NoneType' object is not subscriptable
+13:59:09  Extracting component from https://www.radix-ui.com/primitives/docs/components/toolbar
+13:59:30  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:59:30  Generating metadata for: Toolbar
+13:59:31  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:59:31  Extracting component from https://www.radix-ui.com/primitives/docs/components/tooltip
+14:00:04  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:00:04  Generating metadata for: Tooltip
+14:00:04  Metadata generation failed for Tooltip: 'NoneType' object is not subscriptable
+14:00:04  Extracting component from https://magicui.design/docs/components/animated-beam
+14:00:25  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:00:25  Generating metadata for: Animated Beam
+14:00:26  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:00:26  Extracting component from https://magicui.design/docs/components/animated-gradient-text
+14:00:51  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:00:51  Generating metadata for: Animated Gradient Text
+14:00:52  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:00:52  Extracting component from https://magicui.design/docs/components/animated-list
+14:01:24  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:01:24  Generating metadata for: Animated List
+14:01:25  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:01:25  Extracting component from https://magicui.design/docs/components/animated-subscribe-button
+14:01:32  Page content too thin for https://magicui.design/docs/components/animated-subscribe-button (110 chars) — skipping
+14:01:32  Extracting component from https://magicui.design/docs/components/aurora-text
+14:01:54  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:01:54  Generating metadata for: Aurora Text
+14:01:55  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:01:55  Extracting component from https://magicui.design/docs/components/border-beam
+14:03:14  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:03:14  Generating metadata for: Border Beam
+14:03:15  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:03:15  Extracting component from https://magicui.design/docs/components/bento-grid
+14:03:36  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:03:36  Generating metadata for: Bento Grid
+14:03:38  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:03:38  Extracting component from https://magicui.design/docs/components/blur-fade
+14:04:14  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:04:14  Generating metadata for: Blur Fade
+14:04:15  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:04:15  Extracting component from https://magicui.design/docs/components/box-reveal
+14:04:22  Page content too thin for https://magicui.design/docs/components/box-reveal (110 chars) — skipping
+14:04:22  Extracting component from https://magicui.design/docs/components/confetti
+14:05:15  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:05:16  Generating metadata for: Confetti
+14:05:17  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:05:17  Extracting component from https://magicui.design/docs/components/dock
