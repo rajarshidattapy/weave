@@ -3,6 +3,7 @@
 import { useWebContainer } from '@/providers/webcontainer-provider';
 import { motion } from 'framer-motion';
 import { Download, Circle } from 'lucide-react';
+import { UserButton } from '@clerk/nextjs';
 export function TopNav() {
   const { isReady, isInitializing } = useWebContainer();
 
@@ -38,7 +39,20 @@ export function TopNav() {
           <Download className="h-4 w-4" />
           <span className="hidden sm:inline"></span>
         </button> */}
-        <div className="h-8 w-8 rounded-full bg-gradient-to-br from-blue-500 to-purple-600" />
+        <UserButton 
+          appearance={{
+            elements: {
+              avatarBox: "w-8 h-8 rounded-lg",
+              userButtonPopoverCard: "bg-black/90 backdrop-blur-xl border border-white/10 shadow-2xl rounded-2xl",
+              userPreviewMainIdentifier: "text-white font-medium",
+              userPreviewSecondaryIdentifier: "text-white/50",
+              userButtonPopoverActionButtonText: "text-white/80",
+              userButtonPopoverActionButtonIcon: "text-white/80",
+              userButtonPopoverActionButton: "hover:bg-white/5 transition-colors",
+              userButtonPopoverFooter: "hidden"
+            }
+          }}
+        />
       </div>
     </motion.div>
   );
