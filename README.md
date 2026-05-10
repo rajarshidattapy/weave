@@ -2,7 +2,7 @@
 
 > AI-native frontend composition engine.
 
-![image](public/image.png)
+![image](public/bg.png)
 
 Weave turns frontend development into retrieval, composition, and live runtime editing.
 

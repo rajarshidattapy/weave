@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback } from 'react';
+import { useCallback, useEffect } from 'react';
 import { toast } from 'sonner';
 import { TopNav } from '@/components/top-nav';
 import { LeftPanel } from '@/components/left-panel';
@@ -11,8 +11,14 @@ import { FloatingActions } from '@/components/floating-actions';
 import { WebContainerProvider } from '@/providers/webcontainer-provider';
 import { AppProvider } from '@/providers/app-context';
 import { useBackendWS, BackendEvent } from '@/hooks/use-backend-ws';
+import { resetSandbox } from '@/lib/api';
 
 function StudioWithWS({ children }: { children: React.ReactNode }) {
+  // Reset the sandbox to its clean template state on every page load.
+  useEffect(() => {
+    resetSandbox().catch(() => {/* backend may not be running yet */});
+  }, []);
+
   const handleEvent = useCallback((event: BackendEvent) => {
     if (event.type === 'indexing_progress') {
       const e = event as { type: string; phase: string; count?: number; current?: number; total?: number; component?: string };

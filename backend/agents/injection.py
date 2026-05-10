@@ -47,7 +47,17 @@ def inject_component(component_id: str, target_file: str = "app/page.tsx") -> di
             import_line = f'import {safe_name} from "./components/{safe_name}";'
             if import_line not in content:
                 lines = content.split("\n")
-                last_imp = max((i for i, l in enumerate(lines) if l.strip().startswith("import ")), default=-1)
+                # Find the last line that *closes* an import statement (ends with ; and
+                # belongs to an import block). This handles both single-line and
+                # multi-line imports without inserting mid-block.
+                last_imp = -1
+                for i, line in enumerate(lines):
+                    s = line.strip()
+                    if s.endswith(";") and (
+                        s.startswith("import ") or
+                        (s.startswith("}") and " from " in s)
+                    ):
+                        last_imp = i
                 lines.insert(last_imp + 1, import_line)
                 content = "\n".join(lines)
             jsx_tag = f"<{safe_name} />"

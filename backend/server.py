@@ -28,6 +28,9 @@ from schemas.models import (
     InjectRequest, InjectResponse,
     IndexLibraryRequest, IndexLibraryResponse,
     ComponentResponse, GraphResponse,
+    SuggestRequest, SuggestResponse,
+    IntegrateRequest, IntegrateResponse,
+    FixErrorRequest, FixErrorResponse,
 )
 from agents.retrieval import retrieve_components
 from agents.injection import inject_component
@@ -36,6 +39,10 @@ from agents.extraction import extract_component
 from agents.metadata import generate_metadata
 from agents.compatibility import compute_compatibility
 from agents.graph import generate_graph
+from agents.suggestions import suggest_improvements
+from agents.reset import reset_sandbox
+from runtime.integration.injector import run_pipeline, SANDBOX_ROOT as INTEGRATION_ROOT
+from runtime.integration.fixer import fix_pasted_error
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -182,6 +189,52 @@ async def api_list_components(limit: int = 100, offset: int = 0):
     return {"components": components, "count": len(components)}
 
 
+@app.post("/integrate", response_model=IntegrateResponse)
+async def api_integrate(req: IntegrateRequest):
+    """Full agentic integration pipeline: plan → files → deps → AST edit → validate → fix."""
+    component = get_component(req.component_id)
+    if not component:
+        from fastapi import HTTPException
+        raise HTTPException(status_code=404, detail="Component not found")
+
+    loop = asyncio.get_event_loop()
+
+    def on_progress(step: str, msg: str):
+        asyncio.run_coroutine_threadsafe(
+            manager.broadcast({"type": "integration_progress", "step": step, "message": msg}),
+            loop,
+        )
+
+    result = await asyncio.to_thread(
+        run_pipeline, component, req.target_file, on_progress, 3, INTEGRATION_ROOT
+    )
+
+    resp = IntegrateResponse(component_id=req.component_id, **result)
+    await manager.broadcast({"type": "injection_complete", "data": resp.model_dump()})
+    return resp
+
+
+@app.post("/fix-error", response_model=FixErrorResponse)
+async def api_fix_error(req: FixErrorRequest):
+    """Fix a pasted runtime/build error by patching sandbox files."""
+    result = await asyncio.to_thread(fix_pasted_error, req.error, INTEGRATION_ROOT)
+    return FixErrorResponse(**result)
+
+
+@app.post("/sandbox/reset")
+async def api_reset_sandbox():
+    """Restore the test-next sandbox to its original template state."""
+    result = await asyncio.to_thread(reset_sandbox)
+    return result
+
+
+@app.post("/suggest", response_model=SuggestResponse)
+async def api_suggest(req: SuggestRequest):
+    """Analyze sandbox state and return improvement suggestions."""
+    result = await asyncio.to_thread(suggest_improvements, req.context, req.limit)
+    return result
+
+
 @app.get("/graph")
 async def api_graph(library: str = None):
     """Generate and return the component relationship graph."""
@@ -217,6 +270,24 @@ async def websocket_endpoint(ws: WebSocket):
 
             elif msg_type == "inject_component":
                 result = await asyncio.to_thread(inject_component, data.get("component_id", ""), data.get("target_file", "app/page.tsx"))
+                await ws.send_json({"type": "injection_complete", "data": result})
+
+            elif msg_type == "integrate_component":
+                component = get_component(data.get("component_id", ""))
+                if not component:
+                    await ws.send_json({"type": "error", "message": "Component not found"})
+                    continue
+                loop = asyncio.get_event_loop()
+
+                def _progress(step: str, msg: str):
+                    asyncio.run_coroutine_threadsafe(
+                        ws.send_json({"type": "integration_progress", "step": step, "message": msg}),
+                        loop,
+                    )
+
+                result = await asyncio.to_thread(
+                    run_pipeline, component, data.get("target_file", "app/page.tsx"), _progress, 3, INTEGRATION_ROOT
+                )
                 await ws.send_json({"type": "injection_complete", "data": result})
 
             else:

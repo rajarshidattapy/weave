@@ -84,6 +84,12 @@ export default function OnboardingFlow() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="flex flex-col flex-1 max-w-2xl"
         >
+          <div className="flex items-center gap-3 px-5 py-2.5 rounded-full bg-white/[0.06] backdrop-blur-md border border-white/10 shadow-lg shadow-black/20 w-fit mb-6">
+            <img src="/image.png" alt="Anakin" className="w-7 h-7 object-contain" />
+            <span className="text-base text-blue-400/90 font-medium tracking-wide whitespace-nowrap">
+              Built with Anakin
+            </span>
+          </div>
           <h1 className="text-5xl md:text-7xl font-bold tracking-tighter leading-[1.1] mb-6">
             Build beautiful interfaces <br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
@@ -141,6 +147,8 @@ export default function OnboardingFlow() {
         </motion.div>
 
       </main>
+
+
     </div>
   );
 }
@@ -381,7 +389,7 @@ function StepThree({
             const parts = new URL(id).hostname.replace(/^www\./, '').split('.');
             name = parts[parts.length - 2];
             name = name.charAt(0).toUpperCase() + name.slice(1);
-          } catch {}
+          } catch { }
           return { url: id, name };
         }
         return null;

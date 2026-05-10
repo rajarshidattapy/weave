@@ -166,8 +166,8 @@ export function ComponentSuggestions() {
                   {/* Tags from DB metadata */}
                   {(component.tags || []).length > 0 && (
                     <div className="mt-1.5 flex gap-1 flex-wrap">
-                      {(component.tags || []).slice(0, 4).map((tag) => (
-                        <span key={tag} className="text-xs text-white/30">
+                      {(component.tags || []).slice(0, 4).map((tag, idx) => (
+                        <span key={`${tag}-${idx}`} className="text-xs text-white/30">
                           #{tag}
                         </span>
                       ))}

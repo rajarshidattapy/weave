@@ -3,7 +3,8 @@
 import React, { createContext, useContext, useState, useCallback } from 'react';
 import {
   retrieveComponents,
-  injectComponent,
+  integrateComponent,
+  fixError as apiFix,
   getSandboxContext,
   BackendComponent,
 } from '@/lib/api';
@@ -53,6 +54,10 @@ interface AppContextType {
   // Inject
   injectingId: string | null;
   inject: (component: BackendComponent) => Promise<void>;
+
+  // Fix pasted error
+  fixError: (errorText: string) => Promise<{ success: boolean; patches: { file: string; applied: boolean }[] }>;
+  isFixing: boolean;
 }
 
 const AppContext = createContext<AppContextType | undefined>(undefined);
@@ -76,6 +81,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   const [isSearching, setIsSearching] = useState(false);
   const [expandedTags, setExpandedTags] = useState<string[]>([]);
   const [injectingId, setInjectingId] = useState<string | null>(null);
+  const [isFixing, setIsFixing] = useState(false);
 
   const addComponent = (component: Component) => {
     setAddedComponents((prev) => [
@@ -112,12 +118,12 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     }
   }, [selectedSource]);
 
-  // Inject: call backend /inject, then add to addedComponents
+  // Inject: use agentic pipeline (plan → files → deps → AST → validate → fix)
   const inject = useCallback(async (component: BackendComponent) => {
     setInjectingId(component.id);
     try {
-      const res = await injectComponent(component.id);
-      if (res.success) {
+      const res = await integrateComponent(component.id);
+      if (res.success || res.files_created.length > 0) {
         const mapped: Component = {
           id: component.id,
           backendId: component.id,
@@ -130,12 +136,23 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
         };
         addComponent(mapped);
       } else {
-        console.warn('[weave] inject error:', res.error);
+        console.warn('[weave] integrate error:', res.error);
       }
     } catch (err) {
-      console.error('[weave] inject failed:', err);
+      console.error('[weave] integrate failed:', err);
     } finally {
       setInjectingId(null);
+    }
+  }, []);
+
+  const fixError = useCallback(async (errorText: string) => {
+    setIsFixing(true);
+    try {
+      return await apiFix(errorText);
+    } catch {
+      return { success: false, patches: [] };
+    } finally {
+      setIsFixing(false);
     }
   }, []);
 
@@ -157,6 +174,8 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
         search,
         injectingId,
         inject,
+        fixError,
+        isFixing,
       }}
     >
       {children}

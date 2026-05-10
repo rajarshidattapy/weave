@@ -427,3 +427,296 @@
 14:15:15  Generating metadata for: Sparkles Text
 14:15:16  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
 14:15:16  Extracting component from https://magicui.design/docs/components/text-animate
+14:16:02  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:16:02  Generating metadata for: Text Animate
+14:16:03  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:16:03  Extracting component from https://magicui.design/docs/components/text-reveal
+14:16:18  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:16:18  Generating metadata for: Text Reveal
+14:16:19  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:16:20  Extracting component from https://magicui.design/docs/components/word-fade-in
+14:16:26  Page content too thin for https://magicui.design/docs/components/word-fade-in (110 chars) — skipping
+14:16:26  Extracting component from https://magicui.design/docs/components/word-pullup
+14:16:32  Page content too thin for https://magicui.design/docs/components/word-pullup (110 chars) — skipping
+14:16:32  Extracting component from https://magicui.design/docs/components/word-rotate
+14:16:50  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:16:50  Generating metadata for: Word Rotate
+14:16:51  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:16:52  Extracting component from https://ui.watermelon.sh/components/accordion
+14:17:05  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:17:05  Generating metadata for: Accordion
+14:17:05  Metadata generation failed for Accordion: 'NoneType' object is not subscriptable
+14:17:05  Extracting component from https://ui.watermelon.sh/components/badge
+14:17:20  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:17:20  Generating metadata for: Badge
+14:17:20  Metadata generation failed for Badge: 'NoneType' object is not subscriptable
+14:17:20  Extracting component from https://ui.watermelon.sh/components/button
+14:17:33  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:17:33  Generating metadata for: Button
+14:17:33  Metadata generation failed for Button: 'NoneType' object is not subscriptable
+14:17:34  Extracting component from https://ui.watermelon.sh/components/card
+14:17:46  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:17:46  Generating metadata for: Card
+14:17:46  Metadata generation failed for Card: 'NoneType' object is not subscriptable
+14:17:46  Extracting component from https://ui.watermelon.sh/components/checkbox
+14:17:58  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:17:58  Generating metadata for: Checkbox
+14:17:58  Metadata generation failed for Checkbox: 'NoneType' object is not subscriptable
+14:17:58  Extracting component from https://ui.watermelon.sh/components/command
+14:18:47  Page content too thin for https://ui.watermelon.sh/components/command (135 chars) — skipping
+14:18:47  Extracting component from https://ui.watermelon.sh/components/dialog
+14:19:33  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:19:33  Generating metadata for: Dialog
+14:19:33  Metadata generation failed for Dialog: 'NoneType' object is not subscriptable
+14:19:33  Extracting component from https://ui.watermelon.sh/components/dropdown-menu
+14:20:22  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:20:22  Generating metadata for: Dropdown Menu
+14:20:22  Metadata generation failed for Dropdown Menu: 'NoneType' object is not subscriptable
+14:20:22  Extracting component from https://ui.watermelon.sh/components/input
+14:20:31  Page content too thin for https://ui.watermelon.sh/components/input (133 chars) — skipping
+14:20:31  Extracting component from https://ui.watermelon.sh/components/navigation-menu
+14:20:41  Page content too thin for https://ui.watermelon.sh/components/navigation-menu (143 chars) — skipping
+14:20:41  Extracting component from https://ui.watermelon.sh/components/popover
+14:20:50  Page content too thin for https://ui.watermelon.sh/components/popover (242 chars) — skipping
+14:20:50  Extracting component from https://ui.watermelon.sh/components/progress
+14:20:56  Page content too thin for https://ui.watermelon.sh/components/progress (136 chars) — skipping
+14:20:56  Extracting component from https://ui.watermelon.sh/components/radio-group
+14:21:09  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:21:09  Generating metadata for: Radio Group
+14:21:09  Metadata generation failed for Radio Group: 'NoneType' object is not subscriptable
+14:21:09  Extracting component from https://ui.watermelon.sh/components/select
+14:21:34  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:21:34  Generating metadata for: Select
+14:21:34  Metadata generation failed for Select: 'NoneType' object is not subscriptable
+14:21:34  Extracting component from https://ui.watermelon.sh/components/separator
+14:21:44  Page content too thin for https://ui.watermelon.sh/components/separator (137 chars) — skipping
+14:21:44  Extracting component from https://ui.watermelon.sh/components/sheet
+14:21:56  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:21:56  Generating metadata for: Sheet
+14:21:56  Metadata generation failed for Sheet: 'NoneType' object is not subscriptable
+14:21:56  Extracting component from https://ui.watermelon.sh/components/skeleton
+14:22:05  Page content too thin for https://ui.watermelon.sh/components/skeleton (136 chars) — skipping
+14:22:05  Extracting component from https://ui.watermelon.sh/components/slider
+14:22:14  Page content too thin for https://ui.watermelon.sh/components/slider (134 chars) — skipping
+14:22:14  Extracting component from https://ui.watermelon.sh/components/switch
+14:22:27  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:22:27  Generating metadata for: Switch
+14:22:27  Metadata generation failed for Switch: 'NoneType' object is not subscriptable
+14:22:27  Extracting component from https://ui.watermelon.sh/components/table
+14:22:48  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:22:48  Generating metadata for: Table
+14:22:48  Metadata generation failed for Table: 'NoneType' object is not subscriptable
+14:22:48  Extracting component from https://ui.watermelon.sh/components/tabs
+14:23:01  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:23:01  Generating metadata for: Tabs
+14:23:01  Metadata generation failed for Tabs: 'NoneType' object is not subscriptable
+14:23:01  Extracting component from https://ui.watermelon.sh/components/textarea
+14:23:13  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:23:13  Generating metadata for: Textarea
+14:23:13  Metadata generation failed for Textarea: 'NoneType' object is not subscriptable
+14:23:13  Extracting component from https://ui.watermelon.sh/components/toast
+14:23:20  Page content too thin for https://ui.watermelon.sh/components/toast (133 chars) — skipping
+14:23:20  Extracting component from https://ui.watermelon.sh/components/toggle
+14:23:29  Page content too thin for https://ui.watermelon.sh/components/toggle (134 chars) — skipping
+14:23:29  Extracting component from https://ui.watermelon.sh/components/tooltip
+14:23:42  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:23:42  Generating metadata for: Tooltip
+14:23:42  Metadata generation failed for Tooltip: 'NoneType' object is not subscriptable
+
+========================================================
+         WEAVE  -  Bulk Component Indexer
+========================================================
+
+  DB currently holds 12 components
+
+
+========================================================
+  shadcn/ui
+========================================================
+  Seed URLs   : 46
+  Discovery   : skipped (--no-discover)
+  Total unique: 46
+  Already done: 0  |  To scrape: 46
+
+  [  1/46] OK Accordion                           (0.0/s)
+  [  2/46] OK Alert                               (0.0/s)
+  [  3/46] OK Alert Dialog                        (0.0/s)
+  [  4/46] OK Avatar                              (0.0/s)
+  [  5/46] OK Badge                               (0.0/s)
+  [  6/46] OK Button                              (0.0/s)
+  [  7/46] OK Calendar                            (0.0/s)
+  [  8/46] OK Card                                (0.0/s)
+  [  9/46] OK Carousel                            (0.0/s)
+  [ 10/46] OK Checkbox                            (0.0/s)
+  [ 11/46] OK Collapsible                         (0.0/s)
+  [ 12/46] OK Command                             (0.0/s)
+  [ 13/46] OK Combobox                            (0.0/s)
+  [ 14/46] OK Context Menu                        (0.0/s)
+  [ 15/46] OK Data Table                          (0.0/s)
+  [ 16/46] OK Date Picker                         (0.0/s)
+  [ 17/46] OK Dialog                              (0.0/s)
+  [ 18/46] OK Drawer                              (0.0/s)
+  [ 19/46] OK Dropdown Menu                       (0.0/s)
+  [ 20/46] OK Forms                               (0.0/s)
+  [ 21/46] OK Hover Card                          (0.0/s)
+  [ 22/46] OK Input                               (0.0/s)
+  [ 23/46] OK Input OTP                           (0.0/s)
+  [ 24/46] OK Label                               (0.0/s)
+  [ 25/46] OK Menubar                             (0.0/s)
+  [ 26/46] OK Navigation Menu                     (0.0/s)
+  [ 27/46] OK Pagination                          (0.0/s)
+  [ 28/46] OK Popover                             (0.0/s)
+  [ 29/46] OK Progress                            (0.0/s)
+  [ 30/46] OK Radio Group                         (0.0/s)
+  [ 31/46] OK Resizable                           (0.0/s)
+  [ 32/46] OK Scroll Area                         (0.0/s)
+  [ 33/46] OK Select                              (0.0/s)
+  [ 34/46] OK Separator                           (0.0/s)
+  [ 35/46] OK Sheet                               (0.0/s)
+  [ 36/46] OK Sidebar                             (0.0/s)
+  [ 37/46] OK Skeleton                            (0.0/s)
+  [ 38/46] OK Slider                              (0.0/s)
+  [ 39/46] OK Sonner                              (0.0/s)
+  [ 40/46] OK Switch                              (0.0/s)
+  [ 41/46] OK Table                               (0.0/s)
+  [ 42/46] OK Tabs                                (0.0/s)
+  [ 43/46] OK Textarea                            (0.0/s)
+  [ 44/46] OK Toast                               (0.0/s)
+  [ 45/46] OK Toggle                              (0.0/s)
+  [ 46/46] OK Tooltip                             (0.0/s)
+
+========================================================
+  Radix UI
+========================================================
+  Seed URLs   : 28
+  Discovery   : skipped (--no-discover)
+  Total unique: 28
+  Already done: 0  |  To scrape: 28
+
+  [  1/28] OK Accordion                           (0.0/s)
+  [  2/28] OK Alert Dialog                        (0.1/s)
+  [  3/28] OK Aspect Ratio                        (0.1/s)
+  [  4/28] OK Avatar                              (0.1/s)
+  [  5/28] OK Checkbox                            (0.1/s)
+  [  6/28] OK Collapsible                         (0.1/s)
+  [  7/28] OK Context Menu                        (0.1/s)
+  [  8/28] OK Dialog                              (0.0/s)
+  [  9/28] OK Dropdown Menu                       (0.0/s)
+  [ 10/28] OK Form                                (0.0/s)
+  [ 11/28] OK Hover Card                          (0.0/s)
+  [ 12/28] OK Label                               (0.0/s)
+  [ 13/28] OK Menubar                             (0.0/s)
+  [ 14/28] OK Navigation Menu                     (0.0/s)
+  [ 15/28] OK Popover                             (0.0/s)
+  [ 16/28] OK Progress                            (0.0/s)
+  [ 17/28] OK Radio Group                         (0.0/s)
+  [ 18/28] OK Scroll Area                         (0.0/s)
+  [ 19/28] OK Select                              (0.0/s)
+  [ 20/28] OK Separator                           (0.0/s)
+  [ 21/28] OK Slider                              (0.0/s)
+  [ 22/28] OK Switch                              (0.0/s)
+  [ 23/28] OK Tabs                                (0.0/s)
+  [ 24/28] OK Toast                               (0.0/s)
+  [ 25/28] OK Toggle                              (0.0/s)
+  [ 26/28] OK Toggle Group                        (0.0/s)
+  [ 27/28] OK Toolbar                             (0.0/s)
+  [ 28/28] OK Tooltip                             (0.0/s)
+
+========================================================
+  Magic UI
+========================================================
+  Seed URLs   : 41
+  Discovery   : skipped (--no-discover)
+  Total unique: 41
+  Already done: 0  |  To scrape: 41
+
+  [  1/41] OK Animated Beam                       (0.0/s)
+  [  2/41] OK Animated Gradient Text              (0.0/s)
+  [  3/41] OK Animated List                       (0.0/s)
+  [  4/41] !! animated-subscribe-button  (extraction failed)
+  [  5/41] OK Aurora Text                         (0.0/s)
+  [  6/41] OK Border Beam                         (0.0/s)
+  [  7/41] OK Bento Grid                          (0.0/s)
+  [  8/41] OK Blur Fade                           (0.0/s)
+  [  9/41] !! box-reveal  (extraction failed)
+  [ 10/41] OK Confetti                            (0.0/s)
+  [ 11/41] OK Dock                                (0.0/s)
+  [ 12/41] OK Dot Pattern                         (0.0/s)
+  [ 13/41] OK File Tree                           (0.0/s)
+  [ 14/41] !! flip-text  (extraction failed)
+  [ 15/41] OK Globe                               (0.0/s)
+  [ 16/41] !! gradual-spacing  (extraction failed)
+  [ 17/41] OK Grid Pattern                        (0.0/s)
+  [ 18/41] OK Hyper Text                          (0.0/s)
+  [ 19/41] OK Magic Card                          (0.0/s)
+  [ 20/41] OK Marquee                             (0.0/s)
+  [ 21/41] !! meteor-shower  (extraction failed)
+  [ 22/41] OK Morphing Text                       (0.0/s)
+  [ 23/41] OK Neon Gradient Card                  (0.0/s)
+  [ 24/41] OK Number Ticker                       (0.0/s)
+  [ 25/41] !! orbit  (extraction failed)
+  [ 26/41] OK Particles                           (0.0/s)
+  [ 27/41] OK Pulsating Button                    (0.0/s)
+  [ 28/41] OK Rainbow Button                      (0.0/s)
+  [ 29/41] OK Retro Grid                          (0.0/s)
+  [ 30/41] OK Ripple                              (0.0/s)
+  [ 31/41] OK Safari                              (0.0/s)
+  [ 32/41] OK Scroll Based Velocity               (0.0/s)
+  [ 33/41] OK Shimmer Button                      (0.0/s)
+  [ 34/41] OK Shine Border                        (0.0/s)
+  [ 35/41] OK Shiny Button                        (0.0/s)
+  [ 36/41] OK Sparkles Text                       (0.0/s)
+  [ 37/41] OK Text Animate                        (0.0/s)
+  [ 38/41] OK Text Reveal                         (0.0/s)
+  [ 39/41] !! word-fade-in  (extraction failed)
+  [ 40/41] !! word-pullup  (extraction failed)
+  [ 41/41] OK Word Rotate                         (0.0/s)
+
+========================================================
+  Watermelon UI
+========================================================
+  Seed URLs   : 25
+  Discovery   : skipped (--no-discover)
+  Total unique: 25
+  Already done: 0  |  To scrape: 25
+
+  [  1/25] OK Accordion                           (0.1/s)
+  [  2/25] OK Badge                               (0.1/s)
+  [  3/25] OK Button                              (0.1/s)
+  [  4/25] OK Card                                (0.1/s)
+  [  5/25] OK Checkbox                            (0.1/s)
+  [  6/25] !! command  (extraction failed)
+  [  7/25] OK Dialog                              (0.0/s)
+  [  8/25] OK Dropdown Menu                       (0.0/s)
+  [  9/25] !! input  (extraction failed)
+  [ 10/25] !! navigation-menu  (extraction failed)
+  [ 11/25] !! popover  (extraction failed)
+  [ 12/25] !! progress  (extraction failed)
+  [ 13/25] OK Radio Group                         (0.0/s)
+  [ 14/25] OK Select                              (0.0/s)
+  [ 15/25] !! separator  (extraction failed)
+  [ 16/25] OK Sheet                               (0.0/s)
+  [ 17/25] !! skeleton  (extraction failed)
+  [ 18/25] !! slider  (extraction failed)
+  [ 19/25] OK Switch                              (0.0/s)
+  [ 20/25] OK Table                               (0.0/s)
+  [ 21/25] OK Tabs                                (0.0/s)
+  [ 22/25] OK Textarea                            (0.0/s)
+  [ 23/25] !! toast  (extraction failed)
+  [ 24/25] !! toggle  (extraction failed)
+  [ 25/25] OK Tooltip                             (0.0/s)
+
+========================================================
+  SUMMARY
+========================================================
+  Library                 URLs   New  Skip   Err    Time
+  ---------------------- ----- ----- ----- -----  ------
+  shadcn/ui                 46    46     0     0   1382s
+  Radix UI                  28    28     0     0   1350s
+  Magic UI                  41    33     0     8   1008s
+  Watermelon UI             25    15     0    10    410s
+  --------------------------------------------------------
+  TOTAL                          122               4150s
+
+  DB before: 12  ->  after: 122  (+110)
+

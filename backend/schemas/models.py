@@ -146,3 +146,46 @@ class GraphResponse(BaseModel):
     composition_graph: dict = {}
     wrapper_graph: dict = {}
     library_lineage: dict = {}
+
+
+class IntegrateRequest(BaseModel):
+    component_id: str = Field(..., description="ID of the component to integrate")
+    target_file: str = Field(default="app/page.tsx")
+
+
+class IntegrateResponse(BaseModel):
+    success: bool
+    component_id: str
+    files_created: list[str] = []
+    imports_added: list[str] = []
+    jsx_injected: list[str] = []
+    dependencies_installed: list[str] = []
+    build_errors: list[Any] = []
+    fixes_applied: int = 0
+    error: Optional[str] = None
+
+
+class FixErrorRequest(BaseModel):
+    error: str = Field(..., description="Pasted error text / stack trace to fix")
+
+
+class FixErrorResponse(BaseModel):
+    success: bool
+    patches: list[Any] = []
+    error: Optional[str] = None
+
+
+class SuggestRequest(BaseModel):
+    context: str = Field(..., description="Sandbox context string from getSandboxContext()")
+    limit: int = Field(default=5, ge=1, le=10)
+
+
+class SuggestionItem(BaseModel):
+    title: str
+    description: str
+    search_query: str
+    top_component: Optional[Any] = None
+
+
+class SuggestResponse(BaseModel):
+    suggestions: list[SuggestionItem] = []
