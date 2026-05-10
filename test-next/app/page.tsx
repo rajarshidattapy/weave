@@ -1,4 +1,3 @@
-import Button from "./components/Button";
 import {
   FeatureGrid,
   HeroSection,
@@ -20,10 +19,8 @@ export default function Home() {
           title="Simple components for swap demos"
           description="Hero sections and cards are the clearest blocks to retrieve, swap, and compare without changing the page structure."
         />
-
         <MetricsStrip />
         <FeatureGrid />
-        <Button />
       </main>
     </div>
   );
