@@ -331,3 +331,99 @@
 14:05:16  Generating metadata for: Confetti
 14:05:17  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
 14:05:17  Extracting component from https://magicui.design/docs/components/dock
+14:06:10  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:06:10  Generating metadata for: Dock
+14:06:11  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:06:11  Extracting component from https://magicui.design/docs/components/dot-pattern
+14:06:44  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:06:44  Generating metadata for: Dot Pattern
+14:06:45  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:06:45  Extracting component from https://magicui.design/docs/components/file-tree
+14:07:25  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:07:25  Generating metadata for: File Tree
+14:07:26  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:07:26  Extracting component from https://magicui.design/docs/components/flip-text
+14:07:32  Page content too thin for https://magicui.design/docs/components/flip-text (110 chars) — skipping
+14:07:32  Extracting component from https://magicui.design/docs/components/globe
+14:07:48  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:07:48  Generating metadata for: Globe
+14:07:49  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:07:49  Extracting component from https://magicui.design/docs/components/gradual-spacing
+14:07:55  Page content too thin for https://magicui.design/docs/components/gradual-spacing (110 chars) — skipping
+14:07:55  Extracting component from https://magicui.design/docs/components/grid-pattern
+14:08:20  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:08:20  Generating metadata for: Grid Pattern
+14:08:21  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:08:21  Extracting component from https://magicui.design/docs/components/hyper-text
+14:08:42  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:08:42  Generating metadata for: Hyper Text
+14:08:44  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:08:44  Extracting component from https://magicui.design/docs/components/magic-card
+14:09:01  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:09:01  Generating metadata for: Magic Card
+14:09:02  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:09:02  Extracting component from https://magicui.design/docs/components/marquee
+14:09:35  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:09:35  Generating metadata for: Marquee
+14:09:36  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:09:36  Extracting component from https://magicui.design/docs/components/meteor-shower
+14:09:40  Page content too thin for https://magicui.design/docs/components/meteor-shower (110 chars) — skipping
+14:09:40  Extracting component from https://magicui.design/docs/components/morphing-text
+14:10:00  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:10:00  Generating metadata for: Morphing Text
+14:10:01  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:10:01  Extracting component from https://magicui.design/docs/components/neon-gradient-card
+14:10:22  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:10:22  Generating metadata for: Neon Gradient Card
+14:10:23  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:10:23  Extracting component from https://magicui.design/docs/components/number-ticker
+14:10:47  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:10:47  Generating metadata for: Number Ticker
+14:10:49  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:10:49  Extracting component from https://magicui.design/docs/components/orbit
+14:10:55  Page content too thin for https://magicui.design/docs/components/orbit (110 chars) — skipping
+14:10:55  Extracting component from https://magicui.design/docs/components/particles
+14:11:19  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:11:19  Generating metadata for: Particles
+14:11:21  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:11:21  Extracting component from https://magicui.design/docs/components/pulsating-button
+14:11:39  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:11:39  Generating metadata for: Pulsating Button
+14:11:40  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:11:40  Extracting component from https://magicui.design/docs/components/rainbow-button
+14:12:01  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:12:01  Generating metadata for: Rainbow Button
+14:12:03  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:12:03  Extracting component from https://magicui.design/docs/components/retro-grid
+14:12:26  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:12:26  Generating metadata for: Retro Grid
+14:12:27  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:12:27  Extracting component from https://magicui.design/docs/components/ripple
+14:12:51  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:12:51  Generating metadata for: Ripple
+14:12:52  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:12:52  Extracting component from https://magicui.design/docs/components/safari
+14:13:23  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:13:23  Generating metadata for: Safari
+14:13:24  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:13:24  Extracting component from https://magicui.design/docs/components/scroll-based-velocity
+14:13:52  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:13:52  Generating metadata for: Scroll Based Velocity
+14:13:53  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:13:54  Extracting component from https://magicui.design/docs/components/shimmer-button
+14:14:13  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:14:13  Generating metadata for: Shimmer Button
+14:14:16  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:14:16  Extracting component from https://magicui.design/docs/components/shine-border
+14:14:40  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:14:40  Generating metadata for: Shine Border
+14:14:42  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:14:42  Extracting component from https://magicui.design/docs/components/shiny-button
+14:14:56  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:14:56  Generating metadata for: Shiny Button
+14:14:57  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:14:57  Extracting component from https://magicui.design/docs/components/sparkles-text
+14:15:15  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:15:15  Generating metadata for: Sparkles Text
+14:15:16  HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:15:16  Extracting component from https://magicui.design/docs/components/text-animate
